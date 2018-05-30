@@ -1,0 +1,108 @@
+<div class="tab-ft">
+  <h3>
+    Angular EJ2-Tab FT Samples
+  </h3>
+  <div id="SampleSwitch" class="e-sampleSwitch">
+    <div class="control-switch">
+      <button ejs-button id='default' [isPrimary]="true" (click)="tabdefault($event)"> Default</button>
+    </div>
+    <div class="control-switch">
+      <button ejs-button id='ng-For' [isPrimary]="true" (click)="tabngfor($event)"> NG-For</button>
+    </div>
+    <div class="control-switch">
+      <button ejs-button id= 'ng-Template' [isPrimary]="true" (click)="tabngtemplate($event)"> NG-Template</button>
+    </div>
+    <div class="control-switch">
+      <button ejs-button id='ng-Route' [isPrimary]="true" (click)="tabngroute($event)"> NG-Route</button>
+    </div>
+  </div>
+  <div id="componentSection" class="e-component-section">
+    <div class="e-control-section">
+      <div class="e-sample-section">
+
+        <div class="sample_outlet">
+          <router-outlet></router-outlet>
+          </div>
+    </div>
+  </div>
+  <div class="e-property-section">
+    <table cellpadding="5" cellspacing="5">
+      <tr>
+        <td colspan="2">
+          <div class="e-float-input">
+            <input #tabindex class="e-input" id="tab_input_index" value="0" required="">
+            <span class="e-float-line"></span>
+            <label class="e-float-text">Enter Tab index</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button #addtab id='addTabItem' ejs-button [isPrimary]="true">Add tab</button>
+        </td>
+        <td>
+          <button #removetab id='removeTabItem' ejs-button [isPrimary]="true">remove tab</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button #emptytab ejs-button [isPrimary]="true">Empty tab</button>
+        </td>
+        <td>
+          <button #updateItem id='updateTabItem' ejs-button [isPrimary]="true">Update tab Item</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button #disabletab id='disableTabItem' ejs-button [isPrimary]="true">Disabled tab Item</button>
+        </td>
+        <td>
+          <button #enabletab id='enableTabItem' ejs-button [isPrimary]="true">Enabled tab Item</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button #hidetab id='hideTabItem' ejs-button [isPrimary]="true">Hide tab Item</button>
+        </td>
+        <td>
+          <button #showtab id='showTabItem' ejs-button [isPrimary]="true">Show tab Item</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button #disabletabfull id='disableTab' ejs-button [isPrimary]="true">Disabled tab </button>
+        </td>
+        <td>
+          <button #enabletabfull id='enableTab' ejs-button [isPrimary]="true">Enabled tab</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button #selecttab id='selectTab' ejs-button [isPrimary]="true">Select tab Item</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button #desRender id='refreshTab' ejs-button [isPrimary]="true">Destroy and Rerender</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          headerPlacement: <input id='orientation' #headerPlacement type="checkbox" checked >
+        </td>
+        <td>
+          showCloseButton: <input id='closeButton' #closeButton type="checkbox" >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          enableRtl: <input #tabRTL id='rtlMode' type="checkbox" >
+        </td>
+        <td>
+          PopupMode: <input #overflowMode id='overflowMode' type="checkbox" >
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>

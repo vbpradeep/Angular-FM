@@ -1,0 +1,9 @@
+<ejs-tab #element id="element">
+  <e-tabitems>
+      <e-tabitem *ngFor="let tab of tabLinks; let i = index" [header] = "headerTexts[i]" >
+         <ng-template #content >
+            <span>TabContent: {{tab.con}}</span>
+         </ng-template>
+      </e-tabitem>
+  </e-tabitems>
+</ejs-tab>

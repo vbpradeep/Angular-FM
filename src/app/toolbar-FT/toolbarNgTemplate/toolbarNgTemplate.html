@@ -1,0 +1,20 @@
+<ejs-toolbar #element>
+  <e-items>
+    <e-item prefixIcon='e-cut-icon tb-icons' tooltipText='Cut'></e-item>
+    <e-item prefixIcon='e-copy-icon tb-icons' tooltipText='Copy'></e-item>
+    <e-item prefixIcon='e-paste-icon tb-icons' tooltipText='Paste'>
+      <ng-template #template>
+        <ejs-numerictextbox format="p2" value="0.5" min="0" max="1" step="0.01"></ejs-numerictextbox>
+      </ng-template>
+    </e-item>
+    <e-item type='Separator'></e-item>
+    <e-item prefixIcon='e-bold-icon tb-icons' tooltipText='Bold'>
+      <ng-template #template>
+        <ejs-maskedtextbox mask="000-000-0000"></ejs-maskedtextbox>
+      </ng-template>
+    </e-item>
+    <e-item prefixIcon='e-underline-icon tb-icons' tooltipText='Underline'></e-item>
+    <e-item prefixIcon='e-italic-icon tb-icons' tooltipText='Italic'></e-item>
+    <e-item prefixIcon='e-color-icon tb-icons' tooltipText='Color-Picker'></e-item>
+  </e-items>
+</ejs-toolbar>

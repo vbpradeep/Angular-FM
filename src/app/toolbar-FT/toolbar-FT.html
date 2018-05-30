@@ -1,0 +1,86 @@
+<h3>
+  Angular EJ2-Toolbar FT Samples
+</h3>
+<div id="SampleSwitch" class="e-sampleSwitch">
+  <div class="control-switch">
+    <button #tbarDe ejs-button [isPrimary]="true" id="tbardefault" (click)="toolbardefault($event)">Default</button>
+  </div>
+  <div class="control-switch">
+    <button #tbarDe ejs-button [isPrimary]="true" id="tbarngfor" (click)="tbarngfor($event)">NG-For</button>
+  </div>
+  <div class="control-switch">
+    <button #tbarDe ejs-button [isPrimary]="true" id="tbarngtemplate" (click)="tbarngtemplate($event)">NG-Template</button>
+  </div>
+</div>
+<div id="componentSection" class="e-component-section">
+  <div class="e-control-section">
+    <div class="e-sample-section">
+      <div class="sample_outlet">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<div class="e-property-section">
+  <table cellpadding="5" cellspacing="5">
+    <tr>
+      <td>
+        <div class="e-float-input">
+          <input class="e-input" id="tool_input_index" #toolindex value="0" required="">
+          <span class="e-float-line"></span>
+          <label class="e-float-text">Enter Toolbar index</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button #addItem id='addTbarItem' ejs-button [isPrimary]="true">Add Item</button>
+      </td>
+      <td>
+        <button #addMoreItem id='addTbarMoreItem' ejs-button [isPrimary]="true">Add More Item</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button #emptyTool id='tbarEmpty' ejs-button [isPrimary]="true">Empty Toolbar</button>
+      </td>
+      <td>
+        <button #removeItem id='removeTbarItem' ejs-button [isPrimary]="true">remove Item</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button #disableItem id='disableTbarItem' ejs-button [isPrimary]="true">Disable item</button>
+      </td>
+      <td>
+        <button #enableItem id='enableTbarItem' ejs-button [isPrimary]="true">Enable item</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button #hideItem id='hideTbarItem' ejs-button [isPrimary]="true">Hide item</button>
+      </td>
+      <td>
+        <button #showItem id='showTbarItem' ejs-button [isPrimary]="true">Show item</button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button #updateItem id='updateTbarItem' ejs-button [isPrimary]="true">Update Item</button>
+      </td>
+
+    </tr>
+    <tr>
+      <td colspan="2">
+        overflowMode:
+        <input #overflowMode id='overflowModeCheck' type="checkbox">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        enableRtl:
+        <input #toolRtl id='toolRTL' type="checkbox">
+      </td>
+    </tr>
+  </table>
+</div>
+</div>

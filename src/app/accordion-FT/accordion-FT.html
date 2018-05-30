@@ -1,0 +1,90 @@
+<h3>
+  Angular EJ2-Accordion FT Samples
+</h3>
+<div id="SampleSwitch" class="e-sampleSwitch">
+  <div class="control-switch">
+    <button #acrdnDe id='acrdDefault' ejs-button [isPrimary]="true" (click)="accordiondefault($event)">Accordion Default</button>
+  </div>
+  <div class="control-switch">
+    <button #acrdnDe id='acrdNgFor' ejs-button [isPrimary]="true" (click)="accordionngfor($event)">Accordion Ng-For</button>
+  </div>
+  <div class="control-switch">
+    <button #acrdnDe id='acrdnngTemplate' ejs-button [isPrimary]="true" (click)="accordionngtemplate($event)">Accordion Ng-template</button>
+  </div>
+</div>
+<div id="componentSection" class="e-component-section">
+  <div class="e-control-section">
+    <div class="e-sample-section">
+      <div class="sample_outlet">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<div class="e-property-section">
+  <table>
+    <tr>
+      <td>
+        <div class="e-float-input">
+          <input class="e-input" #acrdnIndex id="acrdn_input_index" value="0" required="">
+          <span class="e-float-line"></span>
+          <label class="e-float-text">Enter Accordion index</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button #addItem id='addItem' ejs-button [isPrimary]="true">Add Item</button>
+      </td>
+      <td>
+        <button #removeItem id='removeItem' ejs-button [isPrimary]="true">remove Item</button>
+      </td>
+
+    </tr>
+    <tr>
+      <td>
+        <button #emptyAcrdn id='emptyAcrdn' ejs-button [isPrimary]="true">Empty Accordion</button>
+      </td>
+      <td>
+        <button #updateitem id='updateItem' ejs-button [isPrimary]="true">Update Item</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button #expandItem id='expandItem' ejs-button [isPrimary]="true">Expand Item</button>
+      </td>
+      <td>
+        <button #collapseItem id='collapseItem' ejs-button [isPrimary]="true">Collapse Item</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button #expandAll id='expandAll' ejs-button [isPrimary]="true">Expand All</button>
+      </td>
+      <td>
+        <button #collapseAll id='collapseAll' ejs-button [isPrimary]="true">Collapse All</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button #disableItem id='disableItem' ejs-button [isPrimary]="true">Disable Item</button>
+      </td>
+      <td>
+        <button #enableItem id='enableItem' ejs-button [isPrimary]="true">Enable Item</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button #hideItem id='hideItem' ejs-button [isPrimary]="true">Hide Item</button>
+      </td>
+      <td>
+        <button #showItem id='showItem' ejs-button [isPrimary]="true">show Item</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button #refreshAcrdn id='refreshAcrdn' ejs-button [isPrimary]="true">Refresh Acrdn</button>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>

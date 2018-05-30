@@ -1,0 +1,15 @@
+<div id="switch_control">
+  <div class="control-switch">
+    <button #tadFT id="tabFT" ejs-button [isPrimary]="true" (click)="tabclick($event)">Tab FT Samples</button>
+  </div>
+  <div class="control-switch">
+    <button #tadFT id="toolbarFT" ejs-button [isPrimary]="true" (click)="toolbarclick($event)">Toolbar FT Samples</button>
+  </div>
+  <div class="control-switch">
+    <button #tadFT id="accordionFT" ejs-button  id="accordionFT" [isPrimary]="true" (click)="accordionclick($event)">Accordion FT Samples</button>
+  </div>
+</div>
+
+<div id="ftRouter">
+  <router-outlet></router-outlet>
+</div>
