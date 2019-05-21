@@ -1,21 +1,21 @@
 import { Component, ViewEncapsulation, ElementRef, Inject, ViewChild, TemplateRef } from '@angular/core';
 
-import { TabComponent, ToolbarComponent, ItemModel } from '@syncfusion/ej2-ng-navigations';
+import { TabComponent, ToolbarComponent, ItemModel } from '@syncfusion/ej2-angular-navigations';
 import { AfterViewInit } from '@angular/core';
-import { ButtonComponent } from '@syncfusion/ej2-ng-buttons'
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
 import { Router, ActivatedRoute } from '@angular/router';
 
 import { add, addMore, remove, disableItem, empty, enableItem, hideItem, overflowMode, tbarRtl, showItem, updateItem } from '../toolbar-FT.component';
 import { propertyPanlerefresh, additem, addmoreitem, removeitem, disableitem, emptyItem, enableitem, hideitem, showitem, updateitem, rtlModeChange, overflowmodeChange } from '../toolbar-FT.component';
 
 @Component({
-  selector: 'tbar-ng-template',
+  selector: 'tbar-angular-template',
   templateUrl: './toolbarNgTemplate.html',
 })
 export class TbarNGTemplate {
 
   @ViewChild('element') tbarObj: ToolbarComponent;
-  
+
   constructor(private route: ActivatedRoute, private router: Router) {
 
   }

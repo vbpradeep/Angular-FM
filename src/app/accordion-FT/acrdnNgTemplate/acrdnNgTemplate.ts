@@ -1,28 +1,50 @@
 import { Component, ViewEncapsulation, ElementRef, Inject, ViewChild, TemplateRef } from '@angular/core';
 
-import { TabComponent, ToolbarComponent, ItemModel, AccordionComponent } from '@syncfusion/ej2-ng-navigations';
+import { TabComponent, ToolbarComponent, ItemModel, AccordionComponent } from '@syncfusion/ej2-angular-navigations';
 import { AfterViewInit } from '@angular/core';
-import { ButtonComponent } from '@syncfusion/ej2-ng-buttons'
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
 import { Router, ActivatedRoute } from '@angular/router';
-import { orderDetails} from '../../tab-FT/ngRoute/ngRouteGrid/data'
 
 import { addItem, removeItem, emptyAcrdn, updatetItem, expandItem, collapseItem, expandAll, collapseAll, disableItem, enableItem, hideItem, showItem, refreshAcrdn  } from '../accordion-FT.component';
 import { addItemFn, removeItemFn, emptyAcrdnFn, updateItemFn, expandItemFn, collapseItemFn, expandAllFn, collapseAllFn, disableItemFn, enableItemFn, hideItemFn, showItemFn, refreshFn } from '../accordion-FT.component';
+import { orderDetails} from '../../tab-FT/ngRoute/ngRouteGrid/data'
 
 @Component({
-  selector: 'acrdn-ng-template',
+  selector: 'acrdn-angular-template',
   templateUrl: './acrdnNgTemplate.html',
 })
 export class AcrdnNgTemplate {
 
-  public data: Object[] = [];
   @ViewChild('element') acrdnObj: AccordionComponent;
+  public sportsData: Object[] = [
+    { Id: 'Game1', Game: 'American Football' },
+    { Id: 'Game2', Game: 'Badminton' },
+    { Id: 'Game3', Game: 'Basketball' },
+    { Id: 'Game4', Game: 'Cricket' },
+    { Id: 'Game5', Game: 'Football' },
+    { Id: 'Game6', Game: 'Golf' },
+    { Id: 'Game7', Game: 'Hockey' },
+    { Id: 'Game8', Game: 'Rugby' },
+    { Id: 'Game9', Game: 'Snooker' },
+    { Id: 'Game10', Game: 'Tennis' }
+  ];
+  // maps the appropriate column to fields property
+  public fields: Object = { text: 'Game', value: 'Id' };
+  // set the height of the popup element
+  public height: string = '250px';
+  // set the value to select an item based on mapped value at initial rendering
+  public value: string = 'Game3';
+  // set the placeholder to ComboBox input element
+  public waterMark: string = 'Select a game';
+  public data: Object[] = [];
   constructor(private route: ActivatedRoute, private router: Router) {
 
   }
+
   ngOnInit(): void {
     this.data = orderDetails;
   }
+
   ngAfterViewInit() {
 
     addItem.element.onclick = () => {

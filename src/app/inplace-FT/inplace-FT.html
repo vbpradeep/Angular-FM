@@ -1,0 +1,26 @@
+<h3>
+  Angular EJ2-Inplace FT Samples
+</h3>
+<div id="SampleSwitch" class="e-sampleSwitch">
+  <div class="control-switch">
+    <button #inplaceDe ejs-button [isPrimary]="true" id="default" (click)="inplacedefault($event)">DEFAULT</button>
+  </div>
+  <div class="control-switch">
+    <button #inplaceDe ejs-button [isPrimary]="true" id="ngTemplate" (click)="ngtemplate($event)">NG-TEMPLATE</button>
+  </div>
+  <div class="control-switch">
+    <button #inplaceDe ejs-button [isPrimary]="true" id="reactiveForm" (click)="inplaceform($event)" style="display: none">REACTIVE
+      FORM</button>
+  </div>
+</div>
+<div id="componentSection" class="e-component-section">
+  <div class="e-control-section">
+    <div class="e-sample-section">
+      <div class="sample_outlet" id="sample_out">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <div class="e-property-section">
+  </div>
+</div>

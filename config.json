@@ -1,0 +1,18 @@
+{
+    "spec": ["./spec/**/*.spec.js"],
+    "tslint": ["./src/**/*.ts", "!./src/**/*-model.d.ts", "!./src/**/*-builder.d.ts"],
+    "components":["Accordion","Tab","Toolbar","Card"],
+    "branchName":"master",
+    "dashBoardReport":true,
+    "seleniumAddress": "http://localhost:4444/wd/hub/",
+    "browsers": ["chrome"],
+    "mail_config": {
+        "user_name": "Pradeep Kumar B",
+        "user_email" : "webtesting@syncfusion.com",
+        "password" : "WDT_Testing",
+        "subject" : "EJ2-Angular platform Automation Report for Tab,Toolbar,Toast,Accordion",
+        "title": "Please refer the below details for the EJ2-Angular platform Automation Report",
+        "to" : "pradeepkumar.bose@syncfusion.com,rajendranr@syncfusion.com,easwaris@syncfusion.com",
+        "cc" : "satheeshkumar.balasubramanian@syncfusion.com,arun.palaniyandi@syncfusion.com,buvana.sathasivam@syncfusion.com,alagumeena.kalaiselvan@syncfusion.com,pandiyaraj.muniyandi@syncfusion.com"
+    }
+}

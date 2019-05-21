@@ -1,6 +1,5 @@
 <ejs-toolbar #element>
   <e-items>
-    <e-item *ngFor="let item of items; let i = index" [prefixIcon]="item.icon">
-    </e-item>
+    <e-item *ngFor="let item of toolbarItems; let i = index" [prefixIcon]="item.prefixIcon" [tooltipText]="item.tooltipText" ></e-item>
   </e-items>
 </ejs-toolbar>

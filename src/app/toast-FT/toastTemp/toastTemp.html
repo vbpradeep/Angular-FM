@@ -1,0 +1,16 @@
+<ejs-toast #toast id='toast' target="#sample_out toast-temp" timeOut=0 title="Sample Toast Title" content="Sample Toast Content" (created)="onCreate($event)" >      
+    <ng-template #template>
+        <div id="template_toast_ele">
+            <div id='template_toast'>
+                <div class="horizontal-align">
+                    <div class='e-icons toast-icons e-alarm'></div>
+                <div class='toast-content'>
+                <div class='toast-title'>Weekend Alarm</div>
+                <div class='toast-message'> With traffic, its likely to take 45 minutes to get to jenny's 24th Birthday Bash at Hillside Bar, 454 E.
+                    Olive Way by 10:00PM </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</ejs-toast>

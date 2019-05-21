@@ -11,11 +11,14 @@
   <div class="control-switch">
     <button #acrdnDe id='acrdnngTemplate' ejs-button [isPrimary]="true" (click)="accordionngtemplate($event)">Accordion Ng-template</button>
   </div>
+  <div class="control-switch">
+    <button #acrdnDe id="acrdnNgContainer" ejs-button [isPrimary]="true" (click)="accordionngcontainer($event)">Accordion Ng-Container</button>
+  </div>
 </div>
 <div id="componentSection" class="e-component-section">
   <div class="e-control-section">
     <div class="e-sample-section">
-      <div class="sample_outlet">
+      <div class="sample_outlet" id="sample_out">
         <router-outlet></router-outlet>
     </div>
   </div>

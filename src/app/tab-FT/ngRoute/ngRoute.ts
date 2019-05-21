@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation, ElementRef, Inject, ViewChild, TemplateRef } from '@angular/core';
 
-import { TabComponent, ToolbarComponent, ItemModel, SelectEventArgs } from '@syncfusion/ej2-ng-navigations';
+import { TabComponent, ToolbarComponent, ItemModel, SelectEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { AfterViewInit } from '@angular/core';
-import { ButtonComponent } from '@syncfusion/ej2-ng-buttons';
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { Router, ActivatedRoute } from '@angular/router';
 import { add,empty,remove,update,inputEle, addTab, removeTab, emptyTab, updateTab, closeBtn,headerPlace,tabRTL,showCloseButton,headerPlacement,tabRtlEnable, disableitem,disableItem, enableitem,enableItem  } from '../tab-FT.component';
 import { disabletab,disableTab,enabletab,enableTab,showTabItem,hideTabItem,showItem,hideItem, selectitem,selectItem,refreshTab,refreshComponent, propertyPanlerefresh  } from '../tab-FT.component';
@@ -22,8 +22,9 @@ export class TabNGRoute {
   }
 
   public tabselect(e: SelectEventArgs) {
-
+    debugger
     if (e.selectedIndex === 0) {
+      
       this.router.navigateByUrl('/tab-FT/ngRoute/ngRouteCalendar');
     }
     if (e.selectedIndex === 1) {
@@ -33,6 +34,10 @@ export class TabNGRoute {
       this.router.navigateByUrl('/tab-FT/ngRoute/ngRouteGrid');
     }
      
+  }
+
+  public tabCreate(e) {
+    this.router.navigateByUrl('/tab-FT/ngRoute/ngRouteCalendar');
   }
 
 

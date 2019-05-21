@@ -1,21 +1,21 @@
 import { Component, ViewEncapsulation, ElementRef, Inject, ViewChild, TemplateRef } from '@angular/core';
 
-import { TabComponent, ToolbarComponent, ItemModel } from '@syncfusion/ej2-ng-navigations';
+import { TabComponent, ToolbarComponent, ItemModel } from '@syncfusion/ej2-angular-navigations';
 import { AfterViewInit } from '@angular/core';
-import { ButtonComponent } from '@syncfusion/ej2-ng-buttons'
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
 import { Router, ActivatedRoute } from '@angular/router';
 import { add, empty, remove, update, inputEle, addTab, removeTab, emptyTab, updateTab, closeBtn, headerPlace, tabRTL, showCloseButton, headerPlacement, tabRtlEnable, disableitem, disableItem, enableitem, enableItem } from '../tab-FT.component';
 import { disabletab, disableTab, enabletab, enableTab, showTabItem, hideTabItem, showItem, hideItem, selectitem, selectItem, refreshTab, refreshComponent, propertyPanlerefresh } from '../tab-FT.component';
 import { orderDetails} from '../ngRoute/ngRouteGrid/data'
 
 @Component({
-  selector: 'tab-ng-template',
+  selector: 'tab-angular-template',
   templateUrl: './TabNGTemplate.html',
 })
 export class TabNGTemplate {
 
   @ViewChild('element') tabObj: TabComponent;
-  public headerText: Object = [{ text: 'Calendar' }, { text: 'ComboBox' }, { text: 'Grid' }];
+  public headerText1: Object = [{ text: 'Calendar' }, { text: 'ComboBox' }, { text: 'Grid' }];
   // define the JSON of data
   public sportsData: Object[] = [
     { Id: 'Game1', Game: 'American Football' },

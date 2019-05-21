@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation, ElementRef, Inject, ViewChild, TemplateRef, OnInit } from '@angular/core';
 import { TabDefault } from './TabDefault/Tabdefault';
-import { TabComponent, ToolbarComponent, TabItemModel } from '@syncfusion/ej2-ng-navigations';
+import { TabComponent, ToolbarComponent, TabItemModel } from '@syncfusion/ej2-angular-navigations';
 import { AfterViewInit } from '@angular/core';
-import { ButtonComponent } from '@syncfusion/ej2-ng-buttons'
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
 import { Router, ActivatedRoute } from '@angular/router';
 import { refreshVirtualBlock } from '@syncfusion/ej2-grids';
 
@@ -69,12 +69,20 @@ export class TabFTComponent {
     this.router.navigateByUrl('/tab-FT/ngFor');
  }
 
+ public tabngcontainer(): void {
+  this.router.navigateByUrl('/tab-FT/ngContainer');
+}
+
  public tabngtemplate(): void {
   this.router.navigateByUrl('/tab-FT/ngTemplate');
 }
 
 public tabngroute(): void {
   this.router.navigateByUrl('/tab-FT/ngRoute');
+}
+
+public tabngrte(): void {
+  this.router.navigateByUrl('/tab-FT/RichTextEditorIssue');
 }
 
   ngAfterViewInit() {

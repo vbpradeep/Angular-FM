@@ -32,11 +32,25 @@
 npm-debug.log
 testem.log
 /typings
-
-# e2e
-/e2e/*.js
-/e2e/*.map
+/test-reports
 
 # System Files
 .DS_Store
 Thumbs.db
+
+# e2e
+/e2e/*.js
+/e2e/**/*.js
+/e2e/*.map
+
+# e2e image capturing
+
+/e2e/actual/**/*.png
+/e2e/diff/**/*.png
+
+# automation files
+
+/output
+output.zip
+output.7z
+test-report.html

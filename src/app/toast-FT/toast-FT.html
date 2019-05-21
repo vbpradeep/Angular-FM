@@ -1,0 +1,28 @@
+<h3>
+  Angular EJ2-Toast FT Samples
+</h3>
+<div id="SampleSwitch" class="e-sampleSwitch">
+  <div class="control-switch">
+    <button #toastDe ejs-button [isPrimary]="true" id="default" (click)="toastdefault($event)" >Default</button>
+  </div>
+  <div class="control-switch">
+    <button #toastCont ejs-button [isPrimary]="true" id="Container" (click)="toastcontainer($event)" style="display:none">NG-Container</button>
+  </div>
+  <div class="control-switch">
+    <button #toastContem ejs-button [isPrimary]="true" id="conTemplate" title = "Title and content" (click)="toastconTem($event)" >NG-Content-Template</button>
+  </div>
+  <div class="control-switch">
+    <button #toasttemp ejs-button [isPrimary]="true" id="template" title = "Template" (click)="toastTemplate($event)" >NG-Template</button>
+  </div>
+</div>
+<div id="componentSection" class="e-component-section">
+  <div class="e-control-section">
+    <div class="e-sample-section">
+      <div class="sample_outlet" id="sample_out">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<div class="e-property-section">
+</div>
+</div>

@@ -1,31 +1,29 @@
 <ejs-accordion #element>
   <e-accordionitems>
-    <e-accordionitem expanded='true'>
-      <ng-template #header>
-          <div>ASP.NET</div>
-      </ng-template>
-      <ng-template #content>
-          <div>Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser. ASP.NET pages use a compiled,event-driven programming model that improves performance and enables the separation of application logic and user interface.</div>
-      </ng-template>
-    </e-accordionitem>
-    <e-accordionitem header='Calendar'>
+    <e-accordionitem expanded='true' header='Calendar'>
        <ng-template #content>
-          <ejs-calendar></ejs-calendar>
+        <ejs-calendar></ejs-calendar>
        </ng-template>
     </e-accordionitem>
+    <e-accordionitem header='ComboBox'>
+      <ng-template #content>
+        <ejs-combobox id='games' #sample [dataSource]='sportsData' [fields]='fields' [(value)]='value' [placeholder]='waterMark'
+          [popupHeight]='height'></ejs-combobox>
+      </ng-template>
+    </e-accordionitem>
     <e-accordionitem header='Grid'>
-        <ng-template #content>
-            <ejs-grid [dataSource]='data' height='350'>
-                <e-columns>
-                  <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
-                  <e-column field='CustomerName' headerText='Customer Name' width='150'></e-column>
-                  <e-column field='OrderDate' headerText='Order Date' width='130' format="yMd" textAlign='Right'></e-column>
-                  <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right'></e-column>
-                  <e-column field='ShippedDate' headerText='Shipped Date' width='130' format="yMd" textAlign='Right'></e-column>
-                  <e-column field='ShipCountry' headerText='Ship Country' width='150'></e-column>
-                </e-columns>
-              </ejs-grid>
-          </ng-template>
+      <ng-template #content>
+        <ejs-grid [dataSource]='data' height='350'>
+          <e-columns>
+            <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
+            <e-column field='CustomerName' headerText='Customer Name' width='150'></e-column>
+            <e-column field='OrderDate' headerText='Order Date' width='130' format="yMd" textAlign='Right'></e-column>
+            <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right'></e-column>
+            <e-column field='ShippedDate' headerText='Shipped Date' width='130' format="yMd" textAlign='Right'></e-column>
+            <e-column field='ShipCountry' headerText='Ship Country' width='150'></e-column>
+          </e-columns>
+        </ejs-grid>
+      </ng-template>
     </e-accordionitem>
   </e-accordionitems>
 </ejs-accordion>

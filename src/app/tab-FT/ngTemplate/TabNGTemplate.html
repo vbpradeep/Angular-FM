@@ -1,17 +1,20 @@
 <ejs-tab #element id="tab_default" heightAdjustMode='Auto'>
   <e-tabitems>
-    <e-tabitem [header]='headerText[0]'>
+    <e-tabitem>
+        <ng-template #headerText>
+            <div>Calender(Template)</div>
+        </ng-template>
       <ng-template #content>
         <ejs-calendar></ejs-calendar>
       </ng-template>
     </e-tabitem>
-    <e-tabitem [header]='headerText[1]'>
+    <e-tabitem [header]='headerText1[1]'>
       <ng-template #content>
         <ejs-combobox id='games' #sample [dataSource]='sportsData' [fields]='fields' [(value)]='value' [placeholder]='waterMark'
           [popupHeight]='height'></ejs-combobox>
       </ng-template>
     </e-tabitem>
-    <e-tabitem [header]='headerText[2]'>
+    <e-tabitem [header]='headerText1[2]'>
       <ng-template #content>
         <ejs-grid [dataSource]='data' height='350'>
           <e-columns>

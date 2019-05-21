@@ -1,0 +1,32 @@
+<div class="row" style="width:480px; height: 250px;">
+    <div class="col-xs-7 col-sm-7 col-lg-7 col-md-7" style="padding-top:20px;">
+      <div class="outerbox">
+        <div style="padding:30px;">
+          <form [formGroup]="skillForm" novalidate id="formId" (ngSubmit)="onSubmit()" >
+            <div class="form-group">
+              <label>User Name:</label>
+              <ejs-inplaceeditor #text mode="Inline" [model]="textModel" type="Text"  name="text" formControlName="textbox" >
+              </ejs-inplaceeditor>
+              <div *ngIf="textbox.touched" class="alert alert-danger">
+                Enter user name
+              </div>
+            </div>
+            <div class="form-group" style="padding-top:10px;">
+              <label>DOB:</label>
+              <ejs-inplaceeditor #date mode="Inline" [model]="datepickerModel" type="Date" name="date" formControlName="datepicker">
+              </ejs-inplaceeditor>
+              <div *ngIf="datepicker.touched" class="alert alert-danger">
+                select your DOB
+              </div>
+            </div>
+            <div class="form-group footer" style="padding:10px;">
+              <button ejs-button #submitbtn id="submitbutton" class="e-btn e-success" [disabled]="skillForm?.invalid">Submit</button>
+              <button ejs-button class="e-btn e-warning" type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <link href='https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css' rel='stylesheet' />
+  </div>

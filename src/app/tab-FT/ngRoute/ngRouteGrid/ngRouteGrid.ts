@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation, ElementRef, Inject, ViewChild, TemplateRef } from '@angular/core';
 
-import { TabComponent, ToolbarComponent, ItemModel } from '@syncfusion/ej2-ng-navigations';
+import { TabComponent, ToolbarComponent, ItemModel } from '@syncfusion/ej2-angular-navigations';
 import { AfterViewInit } from '@angular/core';
-import { ButtonComponent } from '@syncfusion/ej2-ng-buttons'
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
 import { Router, ActivatedRoute } from '@angular/router';
 import { orderDetails } from './data';
 

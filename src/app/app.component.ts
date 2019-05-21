@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation, ElementRef, Inject, ViewChild, TemplateRef } from '@angular/core';
 
-import { TabComponent, ToolbarComponent } from '@syncfusion/ej2-ng-navigations';
+import { TabComponent, ToolbarComponent } from '@syncfusion/ej2-angular-navigations';
 import { AfterViewInit } from '@angular/core';
-import { ButtonComponent } from '@syncfusion/ej2-ng-buttons'
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -26,6 +26,12 @@ export class AppComponent {
   }
   public accordionclick(): void {
     this.router.navigateByUrl('/accordion-FT');
+  }
+  public toastclick(): void {
+    this.router.navigateByUrl('/toast-FT');
+  }
+  public inplaceclick(): void {
+    this.router.navigateByUrl('/inplace-FT');
   }
 
   ngAfterViewInit() { 

@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation, ElementRef, Inject, ViewChild, TemplateRef } from '@angular/core';
 
-import { TabComponent, ToolbarComponent, AccordionComponent } from '@syncfusion/ej2-ng-navigations';
+import { TabComponent, ToolbarComponent, AccordionComponent } from '@syncfusion/ej2-angular-navigations';
 import { AfterViewInit } from '@angular/core';
-import { ButtonComponent } from '@syncfusion/ej2-ng-buttons'
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
 import { Router, ActivatedRoute } from '@angular/router';
 
 let inputEle: ElementRef;
@@ -56,6 +56,9 @@ export class AccordionFTComponent {
   }
   public accordionngtemplate(): void {
     this.router.navigateByUrl('/accordion-FT/acrdnNgTemplate');
+  }
+  public accordionngcontainer(): void {
+    this.router.navigateByUrl('/accordion-FT/acrdnNgContainer');
   }
 
   ngAfterViewInit() {

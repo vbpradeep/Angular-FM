@@ -10,17 +10,23 @@
       <button ejs-button id='ng-For' [isPrimary]="true" (click)="tabngfor($event)"> NG-For</button>
     </div>
     <div class="control-switch">
+      <button ejs-button id='ng-Container' [isPrimary]="true" (click)="tabngcontainer($event)"> NG-Container</button>
+    </div>
+    <div class="control-switch">
       <button ejs-button id= 'ng-Template' [isPrimary]="true" (click)="tabngtemplate($event)"> NG-Template</button>
     </div>
     <div class="control-switch">
       <button ejs-button id='ng-Route' [isPrimary]="true" (click)="tabngroute($event)"> NG-Route</button>
+    </div>
+    <div class="control-switch">
+      <button ejs-button id='ng-RTE-Issue' [isPrimary]="true" (click)="tabngrte($event)"> NG-RTE-Issue</button>
     </div>
   </div>
   <div id="componentSection" class="e-component-section">
     <div class="e-control-section">
       <div class="e-sample-section">
 
-        <div class="sample_outlet">
+        <div class="sample_outlet" id="sample_out">
           <router-outlet></router-outlet>
           </div>
     </div>

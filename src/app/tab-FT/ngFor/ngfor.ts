@@ -1,20 +1,29 @@
 import { Component, ViewEncapsulation, ElementRef, Inject, ViewChild, TemplateRef } from '@angular/core';
 
-import { TabComponent, ToolbarComponent, ItemModel, TabItemModel } from '@syncfusion/ej2-ng-navigations';
+import { TabComponent, ToolbarComponent, ItemModel, TabItemModel } from '@syncfusion/ej2-angular-navigations';
 import { AfterViewInit } from '@angular/core';
-import { ButtonComponent } from '@syncfusion/ej2-ng-buttons'
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
 import { Router, ActivatedRoute } from '@angular/router';
 import { add,empty,remove,update,inputEle, addTab, removeTab, emptyTab, updateTab, closeBtn,headerPlace,tabRTL,showCloseButton,headerPlacement,tabRtlEnable, disableitem,disableItem, enableitem,enableItem  } from '../tab-FT.component';
 import { disabletab,disableTab,enabletab,enableTab,showTabItem,hideTabItem,showItem,hideItem, selectitem,selectItem,refreshTab,refreshComponent, propertyPanlerefresh  } from '../tab-FT.component';
 
 @Component({
-  selector: 'tab-ng-for',
+  selector: 'tab-angular-for',
   templateUrl: './ngfor.html',
 })
 export class TabNGFor {
 
-  public headerTexts: Object = [{ 'text': 'Tab1' }, { 'text': 'Tab2' },{ 'text': 'Tab3' }];
-  public tabLinks = [{con: 'Text1'},{con: 'Text2'},{con: 'Text3'}];
+  public headerTexts: Object = [{ 'text': 'HTML' }, { 'text': 'C Sharp(C#)' },{ 'text': 'JavaScript' }];
+  public tabLinks = [{con: 'HyperText Markup Language, commonly referred to as HTML, is the standard markup language used to ' +
+  'create web pages. Along with CSS, and JavaScript, HTML is a cornerstone technology, used by most websites to create visually ' +
+  'engaging web pages, user interfaces for web applications, and user interfaces for many mobile applications.[1] Web ' +
+  'browsers can read HTML files and render them into visible or audible web pages. HTML describes the structure of a ' +
+  'website semantically along with cues for presentation, making it a markup language, rather than a programming language.'},{con: 'C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its ' +
+  'development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.'},{con: 'Java is a set of computer software and specifications developed by Sun Microsystems, later acquired ' +
+  'by Oracle Corporation, that provides a system for developing application software and deploying it in a cross-platform ' +
+  'computing environment. Java is used in a wide variety of computing platforms from embedded devices and mobile phones to ' +
+  'enterprise servers and supercomputers. While less common, Java applets run in secure, sandboxed environments to ' +
+  'provide many features of native applications and can be embedded in HTML pages.'}];
 
   @ViewChild('element') tabObj: TabComponent;
   public tabItem: TabItemModel[] = [ {

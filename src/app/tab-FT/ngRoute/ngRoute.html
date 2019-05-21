@@ -1,11 +1,10 @@
-<ejs-tab #element id="tab_default" heightAdjustMode='Auto' (selected)="tabselect($event)">
+<ejs-tab #element id="tab_default" heightAdjustMode='Auto' (selected)="tabselect($event)" (created)="tabCreate($event)">
   <e-tabitems>
       <e-tabitem [header]='headerText[0]' content="#tabRoute"></e-tabitem>
       <e-tabitem [header]='headerText[1]' content="#tabRoute"></e-tabitem>
       <e-tabitem [header]='headerText[2]' content="#tabRoute"></e-tabitem>
   </e-tabitems>
 </ejs-tab>
-
 
 <div id="tabRoute">
   <router-outlet></router-outlet>

@@ -1,0 +1,26 @@
+<div class="content-heading">Garmin Zumo 396Lmt-S Navigator</div>
+
+<div class="card card-default">
+  <div class="card-body">
+
+    <div class="e-tab-section">
+      <div class="col-lg-8">
+        <div class="e-sample-resize-container">
+          <!-- Render the Tab Component -->
+          <ejs-tab #adaptiveTab id="tab_adaptive" heightAdjustMode='Auto'>
+            <e-tabitems><!--Details-->
+           
+              <e-tabitem [header]='headerText[1]'>
+                <ng-template #content>
+                  <ejs-richtexteditor id='defaultRTE1' [(value)]='valueHtml' [toolbarSettings]='tools'></ejs-richtexteditor>
+                </ng-template>
+              </e-tabitem>
+            </e-tabitems>
+          </ejs-tab>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
